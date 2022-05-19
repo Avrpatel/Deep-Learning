@@ -51,11 +51,22 @@ Finally, use the testing data to evaluate each model and compare the performance
 Use the above to answer the following:
 
 > Which model has a lower loss?
->
-> Which model tracks the actual values better over time?
->
-> Which window size works best for the model?
+> I believe the stock predictor closing has a lower loss. The predicted was always lower than the real. 
 
+> Which model tracks the actual values better over time?
+>The predictor closing model was more close than the fng model. The fng predicted was very far off the real values.
+
+> Which window size works best for the model?
+FNG 1 day window loss = 0.1024
+FNG 5 day window loss = 0.1058
+FNG 10 day window loss = 0.1209
+
+Closing 1 day window loss = 0.0080
+Closing 5 day window loss = 0.0070
+Closing 10 day window loss = 0.0103
+
+The window size of  1 for the fng model is the best. 
+The window size of 5 has the lowest loss for the closing price model. As the batch size increases there is less of loss when the window is closer to 1. 
 - - -
 
 ### Resources
