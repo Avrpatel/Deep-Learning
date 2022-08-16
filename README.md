@@ -1,6 +1,4 @@
-# LSTM Stock Predictor
-
-![deep-learning.jpg](Images/deep-learning.jpg)
+# LSTM Stock Predictor Using Fear and Greed Index
 
 Due to the volatility of cryptocurrency speculation, investors will often try to incorporate sentiment from social media and news articles to help guide their trading strategies. One such indicator is the [Crypto Fear and Greed Index (FNG)](https://alternative.me/crypto/fear-and-greed-index/) which attempts to use a variety of data sources to produce a daily FNG value for cryptocurrency. You have been asked to help build and evaluate deep learning models using both the FNG values and simple closing prices to determine if the FNG indicator provides a better signal for cryptocurrencies than the normal closing price data.
 
@@ -80,71 +78,6 @@ The window size of 5 has the lowest loss for the closing price model. As the bat
 [Illustrated Guide to LSTMs](https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21)
 
 [Stanford's RNN Cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks)
-
-- - -
-
-### Hints and Considerations
-
-Experiment with the model architecture and parameters to see which provides the best results, but be sure to use the same architecture and parameters when comparing each model.
-
-For training, use at least 10 estimators for both models.
-
-### Submission
-
-* Create Jupyter Notebooks for the homework and host the notebooks on GitHub.
-
-* Include a Markdown that summarizes your homework and include this report in your GitHub repository.
-
-* Submit the link to your GitHub project to Bootcamp Spot.
-
-- - -
-### Requirements
-
-#### Data Prep for Training and Testing  (26 points)
-
-##### To receive all points, your code must:
-
-* Use the FNG values to predict future closing prices. (7 points)
-* Use the past closing prices to predict future closing prices. (7 points)
-* Apply the MinMaxScaler to the X and Y values to scale the data for the model. (6 points)
-* Reshape X_train and X_test to fit the model requirements (samples, time steps, features). (6 points)
-
-#### Build and train custom LSTM RNNS (20 points)
-
-##### To receive all points, your code must:
-
-* Create a notebook to fit the data using FNG Values. (10 points)
-* Create a notebook to fit the data using closing prices. (10 points)
-
-#### Evaluate Model Performance  (24 points)
-
-##### To receive all points, your code must:
-
-* Determine which model had the lowest loss. (8 points)
-* Determine which model tracks the actual values best over time. (8 points)
-* Determine the appropriate Window Size for the model. (8 points)
-
-#### Coding Conventions and Formatting (10 points)
-
-##### To receive all points, your code must:
-
-* Place imports at the beginning of the file, just after any module comments and docstrings and before module globals and constants. (3 points)
-* Name functions and variables with lowercase characters and with words separated by underscores. (2 points)
-* Follow Don't Repeat Yourself (DRY) principles by creating maintainable and reusable code. (3 points)
-* Use concise logic and creative engineering where possible. (2 points)
-
-#### Deployment and Submission (10 points)
-
-##### To receive all points, you must:
-
-* Submit a link to a GitHub repository that’s cloned to your local machine and contains your files. (5 points)
-* Include appropriate commit messages in your files. (5 points)
-
-#### Code Comments (10 points)
-
-##### To receive all points, your code must:
-
-* Be well commented with concise, relevant notes that other developers can understand. (10 points)
 
 - - -
 
